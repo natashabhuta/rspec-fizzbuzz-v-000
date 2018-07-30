@@ -6,6 +6,8 @@ require_relative '../fizzbuzz.rb'
 
 describe "fizzbuzz" do
   it 'returns "Fizz" when the number is divisible by 3' do
+    if int % 3 == 0 
+      "Fizz"
     fizz_3 = fizzbuzz(3)
 
     expect(fizz_3).to eq("Fizz")
